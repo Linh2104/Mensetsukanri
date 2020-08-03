@@ -81,6 +81,12 @@
             this.このうんどToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dockPanel1 = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.面接準備ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.前提知識ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.履歴書作成注意点ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.暗記するべきToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.面接練習ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.模擬案件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -96,7 +102,8 @@
             this.出勤機ユーザToolStripMenuItem,
             this.教師情報ToolStripMenuItem,
             this.クラス情報管理ToolStripMenuItem,
-            this.教室ToolStripMenuItem});
+            this.教室ToolStripMenuItem,
+            this.面接準備ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
@@ -178,14 +185,14 @@
             // 学生情報一覧ToolStripMenuItem
             // 
             this.学生情報一覧ToolStripMenuItem.Name = "学生情報一覧ToolStripMenuItem";
-            this.学生情報一覧ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.学生情報一覧ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.学生情報一覧ToolStripMenuItem.Text = "学生情報一覧";
             this.学生情報一覧ToolStripMenuItem.Click += new System.EventHandler(this.学生情報一覧ToolStripMenuItem_Click);
             // 
             // 新規学生入塾ToolStripMenuItem
             // 
             this.新規学生入塾ToolStripMenuItem.Name = "新規学生入塾ToolStripMenuItem";
-            this.新規学生入塾ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.新規学生入塾ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.新規学生入塾ToolStripMenuItem.Text = "学生入塾";
             this.新規学生入塾ToolStripMenuItem.Click += new System.EventHandler(this.新規学生入塾ToolStripMenuItem_Click);
             // 
@@ -203,28 +210,28 @@
             // 出勤機学生登録ToolStripMenuItem
             // 
             this.出勤機学生登録ToolStripMenuItem.Name = "出勤機学生登録ToolStripMenuItem";
-            this.出勤機学生登録ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.出勤機学生登録ToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.出勤機学生登録ToolStripMenuItem.Text = "出勤機学生登録";
             this.出勤機学生登録ToolStripMenuItem.Click += new System.EventHandler(this.出勤機学生登録ToolStripMenuItem_Click);
             // 
             // 出勤機学生一覧ToolStripMenuItem
             // 
             this.出勤機学生一覧ToolStripMenuItem.Name = "出勤機学生一覧ToolStripMenuItem";
-            this.出勤機学生一覧ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.出勤機学生一覧ToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.出勤機学生一覧ToolStripMenuItem.Text = "出勤機学生一覧";
             this.出勤機学生一覧ToolStripMenuItem.Click += new System.EventHandler(this.出勤機学生一覧ToolStripMenuItem_Click);
             // 
             // 出勤表エラー記録ToolStripMenuItem1
             // 
             this.出勤表エラー記録ToolStripMenuItem1.Name = "出勤表エラー記録ToolStripMenuItem1";
-            this.出勤表エラー記録ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.出勤表エラー記録ToolStripMenuItem1.Size = new System.Drawing.Size(159, 22);
             this.出勤表エラー記録ToolStripMenuItem1.Text = "出勤表エラー記録";
             this.出勤表エラー記録ToolStripMenuItem1.Click += new System.EventHandler(this.出勤表エラー記録ToolStripMenuItem1_Click);
             // 
             // 学生出勤一覧ToolStripMenuItem1
             // 
             this.学生出勤一覧ToolStripMenuItem1.Name = "学生出勤一覧ToolStripMenuItem1";
-            this.学生出勤一覧ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.学生出勤一覧ToolStripMenuItem1.Size = new System.Drawing.Size(159, 22);
             this.学生出勤一覧ToolStripMenuItem1.Text = "学生出勤一覧";
             this.学生出勤一覧ToolStripMenuItem1.Click += new System.EventHandler(this.学生出勤一覧ToolStripMenuItem1_Click);
             // 
@@ -241,21 +248,21 @@
             // 教師情報一覧ToolStripMenuItem
             // 
             this.教師情報一覧ToolStripMenuItem.Name = "教師情報一覧ToolStripMenuItem";
-            this.教師情報一覧ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.教師情報一覧ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.教師情報一覧ToolStripMenuItem.Text = "教師情報一覧";
             this.教師情報一覧ToolStripMenuItem.Click += new System.EventHandler(this.教師情報一覧ToolStripMenuItem_Click);
             // 
             // 社員から教師へ変更ToolStripMenuItem
             // 
             this.社員から教師へ変更ToolStripMenuItem.Name = "社員から教師へ変更ToolStripMenuItem";
-            this.社員から教師へ変更ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.社員から教師へ変更ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.社員から教師へ変更ToolStripMenuItem.Text = "社員から教師へ変更";
             this.社員から教師へ変更ToolStripMenuItem.Click += new System.EventHandler(this.社員から教師へ変更ToolStripMenuItem_Click);
             // 
             // 社外教師情報登録ToolStripMenuItem
             // 
             this.社外教師情報登録ToolStripMenuItem.Name = "社外教師情報登録ToolStripMenuItem";
-            this.社外教師情報登録ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.社外教師情報登録ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.社外教師情報登録ToolStripMenuItem.Text = "社外教師情報登録";
             this.社外教師情報登録ToolStripMenuItem.Click += new System.EventHandler(this.社外教師情報ToolStripMenuItem_Click);
             // 
@@ -416,6 +423,48 @@
             this.dockPanel1.Skin = dockPanelSkin1;
             this.dockPanel1.TabIndex = 4;
             // 
+            // 面接準備ToolStripMenuItem
+            // 
+            this.面接準備ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.前提知識ToolStripMenuItem,
+            this.履歴書作成注意点ToolStripMenuItem,
+            this.暗記するべきToolStripMenuItem,
+            this.面接練習ToolStripMenuItem,
+            this.模擬案件ToolStripMenuItem});
+            this.面接準備ToolStripMenuItem.Name = "面接準備ToolStripMenuItem";
+            this.面接準備ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.面接準備ToolStripMenuItem.Text = "面接準備";
+            // 
+            // 前提知識ToolStripMenuItem
+            // 
+            this.前提知識ToolStripMenuItem.Name = "前提知識ToolStripMenuItem";
+            this.前提知識ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.前提知識ToolStripMenuItem.Text = "前提知識";
+            // 
+            // 履歴書作成注意点ToolStripMenuItem
+            // 
+            this.履歴書作成注意点ToolStripMenuItem.Name = "履歴書作成注意点ToolStripMenuItem";
+            this.履歴書作成注意点ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.履歴書作成注意点ToolStripMenuItem.Text = "履歴書作成注意点";
+            // 
+            // 暗記するべきToolStripMenuItem
+            // 
+            this.暗記するべきToolStripMenuItem.Name = "暗記するべきToolStripMenuItem";
+            this.暗記するべきToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.暗記するべきToolStripMenuItem.Text = "暗記するべき";
+            // 
+            // 面接練習ToolStripMenuItem
+            // 
+            this.面接練習ToolStripMenuItem.Name = "面接練習ToolStripMenuItem";
+            this.面接練習ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.面接練習ToolStripMenuItem.Text = "面接練習";
+            // 
+            // 模擬案件ToolStripMenuItem
+            // 
+            this.模擬案件ToolStripMenuItem.Name = "模擬案件ToolStripMenuItem";
+            this.模擬案件ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.模擬案件ToolStripMenuItem.Text = "模擬案件";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -481,6 +530,12 @@
         private System.Windows.Forms.ToolStripMenuItem 教室ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 教室一覧ToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem 教室登録ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 面接準備ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 前提知識ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 履歴書作成注意点ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 暗記するべきToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 面接練習ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 模擬案件ToolStripMenuItem;
     }
 }
 
