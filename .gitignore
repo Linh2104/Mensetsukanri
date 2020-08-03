@@ -1,0 +1,19 @@
+﻿################################################################################
+# この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
+################################################################################
+
+/.vs/HL_人事/v16/Server/sqlite3/db.lock
+/.vs/HL_人事/v16/Server/sqlite3/storage.ide
+/.vs/HL_人事/v16/Server/sqlite3/storage.ide-shm
+/.vs/HL_人事/v16/Server/sqlite3/storage.ide-wal
+/obj/x86/Release
+/packages/Microsoft.Office.Interop.Word.12.0.0
+/packages/Microsoft.Office.Interop.Excel.12.0.4518.1014
+/Properties/DataSources
+/packages
+/obj/x86/Debug/TempPE
+/クラス管理.cs.bak
+/oaDataSet.xss
+/oaDataSet.xsd
+/oaDataSet.xsc
+/oaDataSet.Designer.cs
