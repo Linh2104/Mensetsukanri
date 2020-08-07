@@ -176,6 +176,12 @@
     <Compile Include="出勤記録新規追加画面.designer.cs">
       <DependentUpon>出勤記録新規追加画面.cs</DependentUpon>
     </Compile>
+    <Compile Include="前提知識.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="前提知識.Designer.cs">
+      <DependentUpon>前提知識.cs</DependentUpon>
+    </Compile>
     <Compile Include="学生出勤一覧.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -318,6 +324,12 @@
     <Compile Include="社外教師情報.designer.cs">
       <DependentUpon>社外教師情報.cs</DependentUpon>
     </Compile>
+    <Compile Include="面接練習.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="面接練習.Designer.cs">
+      <DependentUpon>面接練習.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AskPrintPice.resx">
       <DependentUpon>AskPrintPice.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="出勤記録新規追加画面.resx">
       <DependentUpon>出勤記録新規追加画面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="前提知識.resx">
+      <DependentUpon>前提知識.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="学生出勤一覧.resx">
       <DependentUpon>学生出勤一覧.cs</DependentUpon>
@@ -418,6 +433,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="社外教師情報.resx">
       <DependentUpon>社外教師情報.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="面接練習.resx">
+      <DependentUpon>面接練習.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
