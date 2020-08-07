@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Windows.Forms.VisualStyles;
 
 namespace HL_塾管理
 {
@@ -71,6 +72,8 @@ namespace HL_塾管理
         //wang add 20200717
         public IntPtr m_出勤記録新規追加画面Handle = IntPtr.Zero;
         //end
+        public IntPtr m_前提知識Handle = IntPtr.Zero;
+        public IntPtr m_面接練習Handle = IntPtr.Zero;
 
         public Dictionary<string, int> codeDic = new Dictionary<string, int>();
         public ユーザ登録 m_ユーザ登録 = null;
@@ -124,6 +127,8 @@ namespace HL_塾管理
         // Linh add 20200616 
         教師クラス履歴一覧 m_NewForm_教師クラス履歴一覧 = new 教師クラス履歴一覧();
         // end
+        前提知識 m_NewForm_前提知識 = new 前提知識();
+        面接練習 m_NewForm_面接練習 = new 面接練習();
         public Form1()
         {
             InitializeComponent();
@@ -181,6 +186,8 @@ namespace HL_塾管理
             this.ログアウトToolStripMenuItem.Enabled = false;
             this.パスワードの変更ToolStripMenuItem.Enabled = false;
             this.教師ユーザーログインToolStripMenuItem.Enabled = false;
+            this.前提知識ToolStripMenuItem.Enabled = false;
+            this.面接練習ToolStripMenuItem.Enabled = false;
 
         }
 
@@ -204,6 +211,8 @@ namespace HL_塾管理
             this.会議室ToolStripMenuItem.Enabled = true;
             this.パスワードの変更ToolStripMenuItem.Enabled = true;
             this.教師ユーザーログインToolStripMenuItem.Enabled = true;
+            this.前提知識ToolStripMenuItem.Enabled = true;
+            this.面接練習ToolStripMenuItem.Enabled = true;
 
             //各画面にハンドル値を渡す
             SendMessage(this.m_パスワード変更Handle, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
@@ -230,6 +239,7 @@ namespace HL_塾管理
             //Linh add 20200616
             SendMessage(this.m_教師クラス履歴一覧Handle, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
             //end
+            SendMessage(this.m_前提知識Handle, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
 
             this.m_ユーザ登録.load();
             this.m_ユーザ登録.Show();
@@ -751,6 +761,37 @@ namespace HL_塾管理
             this.m_教室管理Handle = m_NewForm_教室登録.Handle;
             m_NewForm_教室登録.ShowDialog();
         }
-        //tong 20200515 end*
+
+        private void 面接練習ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.m_面接練習Handle != IntPtr.Zero)
+            {
+                BringWindowToTop(this.m_面接練習Handle);
+                return;
+            }
+
+            m_NewForm_面接練習 = new 面接練習();
+            m_NewForm_面接練習.Tag = this;
+            this.m_面接練習Handle = m_NewForm_面接練習.Handle;
+            m_NewForm_面接練習.Show(this.dockPanel1);
+            toolStripStatusLabel2.Text = "";
+        }
+
+        private void 前提知識ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.m_前提知識Handle != IntPtr.Zero)
+            {
+                BringWindowToTop(this.m_前提知識Handle);
+                return;
+            }
+
+            m_NewForm_前提知識 = new 前提知識();
+            m_NewForm_前提知識.Tag = this;
+            this.m_前提知識Handle = m_NewForm_前提知識.Handle;
+            m_NewForm_前提知識.Show(this.dockPanel1);
+            toolStripStatusLabel2.Text = "";
+        }
+        
+
     }
 }
